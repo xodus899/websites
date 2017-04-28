@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+</head>
+
+<body>
+    <button id="mybutton"> CLICK ME! </button>
+    <div id="firstdiv"> 
+     Change me
+    </div>
+    <button id="appendtext"> Append Text </button>
+    <div id="seconddiv">
+        Javascript is...
+    </div>
+    <button id="createtext"> Create Text </button>
+    <div id="emptydiv">
+        
+    </div>
+
+<script type="text/javascript">
+      document.getElementById("mybutton").onclick=function() {
+    
+        document.getElementById("firstdiv").innerHTML= "You have been changed.";
+      };
+
+      document.getElementById("appendtext").onclick=function() {
+        document.getElementById("seconddiv").innerHTML = document.getElementById("seconddiv").innerHTML + "great";
+      };
+
+        document.getElementById("createtext").onclick=function() {
+    
+        document.getElementById("emptydiv").innerHTML= "<h1> I have been created! </h1>";
+      };
+
+</script>
+
+</body>
+</html>
