@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style> 
+    #circle {
+      width:200px;
+      height:200px;
+      border-radius: 100px;
+      background-color: red
+    }
+    </style>  
+</head>
+
+<body>
+  <input id="firstinput" type="text" value="test">
+
+  <button id="firstbutton"> Change first div text </button>
+
+
+  <div id="firstDiv"> 
+    <p> Some Text </p>
+  </div>
+
+<script type="text/javascript">
+
+  var divId = document.getElementById("firstinput").value;
+
+  document.getElementById('firstbutton').onclick=function() {
+    divId = document.getElementById("firstinput").value;
+    document.getElementById('firstDiv').innerHTML=divId;
+  };
+
+</script>
+
+</body>
+</html>
