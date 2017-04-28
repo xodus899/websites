@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example Javascript</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style> 
+    #circle {
+      width:200px;
+      height:200px;
+      border-radius: 100px;
+      background-color: red
+    }
+    </style>  
+</head>
+
+<body>
+  <p> How many fingers? </p>
+  <input id="answer">
+  <button id="myButton"> Submit </button>
+
+<script type="text/javascript">
+"use strict";
+
+document.getElementById('myButton').onclick=function() {
+  var x= Math.random();
+  x = 6*x;
+  x = Math.floor(x);
+  if(x===document.getElementById('answer').value) {
+    alert("Correct");
+  } else {
+    alert ("Try again! My number was " + x + ".");
+      
+  }
+};
+
+</script>
+
+</body>
+</html>
